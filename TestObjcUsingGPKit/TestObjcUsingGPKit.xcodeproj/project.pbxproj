@@ -373,6 +373,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				INFOPLIST_FILE = TestObjcUsingGPKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cituslabs.TestObjcUsingGPKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +395,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				INFOPLIST_FILE = TestObjcUsingGPKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cituslabs.TestObjcUsingGPKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -6,12 +6,10 @@
 //  Copyright © 2017 Glenn Posadas. All rights reserved.
 //
 
-@import GPKit;
-#import "TestObjcUsingGPKit-Swift.h"
+
 #import "ViewController.h"
 
-@interface ViewController () <CuteDelegate>
-
+@interface ViewController ()
 @end
 
 @implementation ViewController
@@ -19,8 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CuteClass *newCutie = [[CuteClass alloc] init];
-    newCutie.delegate = self;
+    for (int x = 0; x < 10; x++) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 50 + x, 50, 50)];
+        [imageView setImage:[UIImage imageNamed:@"boom"]];
+        [imageView setBackgroundColor:[UIColor blackColor]];
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
+        [imageView addGestureRecognizer:tap];
+        //[imageView setUserInteractionEnabled:YES];
+        [self.view addSubview:imageView];
+    }
+}
+
+
+
+- (void)tapped:(UITapGestureRecognizer *)gestureRecognizer {
+    NSLog(@"TAPPED!");
 }
 
 - (void)myCuteFunc {
